@@ -1,0 +1,59 @@
+/* body {
+    background: url(https://www.danidev.net/images/bg.png) !important;
+} */
+
+.login {
+    left: -50%;
+    display: grid;
+    transform: translate(25%);
+    place-items: center;
+    height: 70vh;
+}
+
+.login>div>button {
+    left: 50%;
+    width: 300px;
+    color: white;
+    font-weight: 800;
+    margin-top: 20px;
+    transform: translate(-50%);
+    background-color: #fa2d00;
+    box-shadow: 7px 7px 7px -5px #fa2d00;
+}
+
+.login>div>button:hover {
+    transition: .5s all ease-in-out;
+    color: black;
+    background-color: #ebff03;
+    box-shadow: 7px 7px 7px -5px #ebff03;
+}
+
+.login>div {
+    display: flex;
+    flex-direction: column;
+}
+
+#right-wheel,
+#left-wheel {
+    animation: wheel 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes wheel2 {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes wheel {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
